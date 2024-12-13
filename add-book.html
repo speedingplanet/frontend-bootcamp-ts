@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Add a Book</title>
+	</head>
+	<body>
+		<header>
+			<h1>Favorite Books</h1>
+			<hr />
+		</header>
+		<h2>Add a Book</h2>
+		<form id="add-book-form">
+			<div>
+				<label for="title">Title:</label>
+				<input
+					type="text"
+					name="title"
+					id="title"
+					required
+					minlength="1"
+					maxlength="255"
+				/>
+			</div>
+			<div>
+				<label for="author">Author:</label>
+				<select
+					name="author"
+					id="author"
+				>
+					<option value="">Authors should appear here!</option>
+				</select>
+			</div>
+			<div><button type="submit">Add Book</button></div>
+		</form>
+		<div id="messages"></div>
+		<footer>
+			<p>
+				Return
+				<a href="/index.html">home</a>
+			</p>
+		</footer>
+		<script
+			type="module"
+			src="src/add-book.ts"
+		></script>
+	</body>
+</html>

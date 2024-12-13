@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Add an Author</title>
+	</head>
+	<body>
+		<header>
+			<h1>Favorite Books</h1>
+			<hr />
+		</header>
+		<h2>Add An Author</h2>
+		<form id="add-author-form">
+			<div>
+				<label for="firstName">First Name:</label>
+				<input
+					type="text"
+					name="firstName"
+					id="firstName"
+					required
+					minlength="1"
+					maxlength="255"
+				/>
+			</div>
+			<div>
+				<label for="lastName">Last Name:</label>
+				<input
+					type="text"
+					name="lastName"
+					id="lastName"
+					required
+					minlength="1"
+					maxlength="255"
+				/>
+			</div>
+			<div><button type="submit">Add Author</button></div>
+		</form>
+		<div id="messages"></div>
+		<footer>
+			<p>
+				Return
+				<a href="/index.html">home</a>
+			</p>
+		</footer>
+		<script
+			type="module"
+			src="src/add-author.ts"
+		></script>
+	</body>
+</html>
